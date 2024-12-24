@@ -6,6 +6,23 @@
     <title>IVapeEcigs</title>
     <link rel="stylesheet" href="temp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script type="text/javascript">
+        // This script runs when the page loads
+        window.onload = function() {
+            var ageConfirmed = confirm("Are you 21 or older?");
+
+            // If the user confirms that they are 21 or older, allow them to stay on the site
+            if (ageConfirmed) {
+                // Allow access to the website (do nothing)
+            } else {
+                // Redirect to a different page (you can change this URL to your desired page)
+                alert("Sorry, you must be 21 or older to access this website.");
+                window.location.href = "https://www.example.com"; // Redirect to another page
+            }
+        };
+    </script>
+    
 </head>
 <body>
 
